@@ -1,0 +1,21 @@
+.Home-Page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.text-header-content{
+    background: #6742CF;
+background: linear-gradient(to right, #6742CF 0%, #CF3214 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.section-content{
+    width: 60%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    height: 60vh;
+    justify-content: center;
+}

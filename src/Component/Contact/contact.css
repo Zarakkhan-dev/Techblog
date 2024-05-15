@@ -1,0 +1,14 @@
+.Contact-form input{
+    border: 1px solid #f26a2f;
+    outline: none;
+    padding: 1vh 1vh;
+    border-radius: 10px;
+}
+.Contact-form textarea{
+    border: 1px solid #f26a2f;
+    outline: none;
+    padding: 1vh 1vh;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,20 @@
+.Navbar{
+   display: grid;
+   grid-template-columns:  1fr 2fr;
+   gap:1vh
+}
+.logo{
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.Navbar ul li{
+    display: flex;
+    justify-content: center;
+    gap:5vh
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

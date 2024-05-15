@@ -1,0 +1,21 @@
+.about-page {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.882),
+      rgba(0, 0, 0, 0.504)
+    ),
+    url("../../assets//About_header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+.detail-about ul{
+    list-style-type: disc;
+}
+.convertion-section ul{
+    list-style-type: disc;
+}
