@@ -31,7 +31,7 @@ type Data = {
   message:string
 };
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
@@ -40,7 +40,7 @@ export default function handler(
     const {name,email,subject,message} = req.body;
 
     if(email){
-        sendEmail(email,subject, message)
+       await  sendEmail(email,subject, message)
         res.status(202).send({name});
     }
     else{
