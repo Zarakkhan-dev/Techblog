@@ -1,5 +1,5 @@
-import React from 'react'
-import Signup from '@/Component/Login/signup'
+
+import Signup from '@/Component/Login/Signup'
 const admin = () => {
   return (
     <>

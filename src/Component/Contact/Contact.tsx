@@ -27,7 +27,6 @@ const Contact = () => {
     e.preventDefault();
 
     const response = await axios.post("api/email" ,formdata);
-    alert("Our Team will soon contact with you ",response.data.name)
     toast.success('🦄Email send successfully!', {
       position: "top-right",
       autoClose: 5000,

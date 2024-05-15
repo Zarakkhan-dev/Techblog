@@ -1,8 +1,8 @@
 export type ContactFormType ={
     name:string,
     email:string,
-    subject:String,
-    message:String
+    subject:string,
+    message:string
 }
 
 export type loginType  ={
