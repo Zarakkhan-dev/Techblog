@@ -1,5 +1,29 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import sendEmail from "./SendMail/emailSender";
+const nodemailer = require('nodemailer');
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'zarakkhan1031@gmail.com',  
+        pass: process.env.nodemailpassword,   
+    }
+});
+
+const sendEmail = (to:string, subject:string, text:string) => {
+    const mailOptions = {
+        from: 'zarakkhan1031@gmail.com',
+        to: to,
+        subject: subject,
+        text: text
+    };
+
+    transporter.sendMail(mailOptions, (error:any) => {
+        if (error) {
+            console.log('Error occurred:', error.message);
+        } else {
+            console.log('Email sent successfully!');
+        }
+    });
+};
 type Data = {
   name: string;
   email:string,
